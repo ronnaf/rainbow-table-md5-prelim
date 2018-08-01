@@ -1,7 +1,7 @@
 ### creating a rainbow table
 - generate all 8-character, lowercase letter combinations from a-z with `itertools.product`
-- iterate throught the generated characters, and make each combination to a single string keyword
-- i'm using python 3, so i need to cast string keyword to bytestring first before hashing it to md5 hash object
+- iterate through the generated characters, and make each combination into a single string keyword
+- i'm using python 3, so i need to cast the string keyword to bytestring first before hashing it to md5 hash object
 - hash the keyword to md5 without salt
 - encrypt the md5 hash object to hex with `hexdigest()`
 - write out the hashes to file with its original keyword
